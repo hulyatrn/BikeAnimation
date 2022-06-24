@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f1f6df;
+}
+
+body{
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.path{
+    background: url("img/Ellipse.png");
+    position: absolute;
+    top: 645px;
+    width: 676px;
+    height: 44px;
+
+    animation-name: bike-path;
+    animation-direction: normal;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.wheel1{
+    background: url("img/Isolation.png");
+	background-repeat: no-repeat;
+    position: absolute;
+    top: 433px;
+    width: 242px;
+    height: 242px;
+
+    animation-name: turn;
+    animation-direction: normal;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.wheel2{
+    background: url("img/Isolation.png");
+	background-repeat: no-repeat;
+    position: absolute;
+    right: 725px;
+    top: 433px;
+    width: 242px;
+    height: 242px;
+
+    animation-name: turn;
+    animation-direction: normal;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.bike{
+    background: url("img/Isolation\ Mode.png");
+    position: absolute;
+    width: 471px;
+    height: 595px;
+    top: 25px;
+    left: 45px;
+}
+
+.balloon{
+    background: url("img/Layer.png");
+    position: absolute;
+    width: 414px;
+    height: 900px;
+    top: 390px;
+    left: 630px;
+    background-size: cover;
+
+    animation-name: play-balloon;
+    animation-direction: normal;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes turn{
+    from{}
+    to{ transform: rotate(360deg);}
+}
+
+@keyframes bike-path{
+    from{}
+    to{ background-position: 676px 0;}
+}
+
+@keyframes play-balloon{
+    30%{
+        top: -80px;
+    }
+}
+
+
+
